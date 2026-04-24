@@ -1,4 +1,5 @@
 Các câu lệnh hay sử dụng trong hệ thống
+ ```bash
  - Kiểm tra dữ liệu
 df -h    #kiểm tra dung lượng hệ thống
 du -h --max-depth=1 / | sort -hr                        #kiểm tra vân vùng đang chiếm dữ liệu - dùng để kiểm tra và dọn dẹp
@@ -48,3 +49,4 @@ vgextend ubuntu-vg /dev/sdc
 # 4. Extend Logical Volume root
 lvextend -l +100%FREE /dev/ubuntu-vg/lv-root
 #5. Nếu là ext4: resize2fs /dev/ubuntu-vg/lv-root (ubuntu thường 90% sẽ là ext4) nếu là xfs: xfs_growfs /
+```
