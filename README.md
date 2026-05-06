@@ -23,13 +23,6 @@ certbot --nginx -d aler.mypoint.com.vn               ###cerbot
 
 
 
-ELK
-curl -u tungnd:123456 -s "http://10.54.192.143:9200/_cat/indices?v&s=store.size:desc" | head -20       #tìm những index nặng
-curl -u tungnd:123456 -XDELETE "http://10.54.192.143:9200/<index_name>"                                #xóa index
-curl 10.54.192.143:9200/_cat/nodes?v                                                                   #kiểm tra trạng thái node
-curl 10.54.192.143:9200/_cat/nodes?v                                                     #kiểm tra xem có bao nhiêu node đang join
-
-
 Mariadb
 SELECT User, Host FROM mysql.user;      ####show user
 
