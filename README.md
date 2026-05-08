@@ -42,4 +42,7 @@ vgextend ubuntu-vg /dev/sdc
 # 4. Extend Logical Volume root
 lvextend -l +100%FREE /dev/ubuntu-vg/lv-root
 #5. Nếu là ext4: resize2fs /dev/ubuntu-vg/lv-root (ubuntu thường 90% sẽ là ext4) nếu là xfs: xfs_growfs /
+
+terragrunt plan
+terragrunt apply
 ```
